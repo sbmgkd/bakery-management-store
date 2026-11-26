@@ -4,7 +4,7 @@ import './index.css'
 import App from './App.jsx'
 import { createBrowserRouter, createRoutesFromElements, Route , RouterProvider } from 'react-router'
 import Layout from './Layout.jsx'
-import {Home, About, Contact, Admin, User, ShoppingCart} from './pages/index.js'
+import {Home, About, Contact, Admin, User, ShoppingCart, Login, Registration} from './pages/index.js'
 
 
 const router = createBrowserRouter(
@@ -16,6 +16,8 @@ const router = createBrowserRouter(
       <Route path='admin' element={<Admin />} />
       <Route path='user' element={<User />} />
       <Route path='shopping-cart' element={<ShoppingCart />} />
+      <Route path='login' element={<Login />} />
+      <Route path='register' element={<Registration />} />
     </Route>
   )
 );
